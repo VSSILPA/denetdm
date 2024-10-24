@@ -151,9 +151,6 @@
             Neural networks trained on biased datasets tend to inadvertently learn spurious correlations, hindering generalization. We formally prove that (1) samples that exhibit spurious correlations lie on a lower rank manifold relative to the ones that do not; and (2) the depth of a network acts as an implicit regularizer on the rank of the attribute subspace that is encoded in its representations. Leveraging these insights, we present DeNetDM, a novel debiasing method that uses network depth modulation as a way of developing robustness to spurious correlations. Using a training paradigm derived from Product of Experts, we create both biased and debiased branches with deep and shallow architectures and then distill knowledge to produce the target debiased model. Our method requires no bias annotations or explicit data augmentation while performing on par with approaches that require either or both. We demonstrate that DeNetDM outperforms existing debiasing techniques on both synthetic and real-world datasets by 5%.
           </p>
           <img src="static/images/teaser.jpg" alt="MY ALT TEXT" class="image is-centered"/>
-          <p>
-            Our DeNetDM model comprises a Product of Expert (PoE), featuring one deep and one shallow expert. The shallow expert primarily captures core attributes, achieving debiased classification, while the deep expert focuses on bias. To compensate for the shallow expert's limited capability due to less depth, we implement a knowledge transfer strategy utilizing knowledge from the experts to train a target debiased model.
-          </p>
         </div>
       </div>
     </div>
@@ -320,7 +317,15 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@misc{sreelatha2024denetdmdebiasingnetworkdepth,
+        title={DeNetDM: Debiasing by Network Depth Modulation}, 
+        author={Silpa Vadakkeeveetil Sreelatha and Adarsh Kappiyath and Abhra Chaudhuri and Anjan Dutta},
+        year={2024},
+        eprint={2403.19863},
+        archivePrefix={arXiv},
+        primaryClass={cs.LG},
+        url={https://arxiv.org/abs/2403.19863}, 
+  }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
