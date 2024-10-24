@@ -178,6 +178,42 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Methodology</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our hypothesis posits that in a task requiring deep and shallow branches to acquire distinct information, the deep branch consistently prioritizes bias attributes, while the shallow branch favors core attributes. We utilize a technique inspired by the Product of Experts \citep{Hinton:02}, where one expert is deeper than the other. Empirical analysis shows that the deep branch becomes perfectly biased and the shallow branch becomes relatively debiased by focusing solely on the core attributes by the end of the training. Since the shallow branch may lack the capacity to capture the nuances of the core attributes adequately due to less depth, we propose a strategy where we train a deep debiased model utilizing the information acquired from both deep (perfectly biased) and shallow (weak debiased) network in the previous phase. Our training paradigm efficiently facilitates the learning of core attributes from bias-conflicting data points to the debiased model of any desired architecture. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/teaser.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          In Stage 1, an ensemble of shallow and deep branches produces outputs linearly combined and trained as a product of experts. The cross-entropy loss with depth modulation aids in separating biases and identifying target attributes. In Stage 2, we further introduce a target branch with the desired architecture, which also requires debiasing. This phase exclusively focuses on refining the target branch's feature extractor and classifier head while leveraging knowledge from the initial stages.
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
 <script> /***
  <!-- Image carousel -->
 <section class="hero is-small">
